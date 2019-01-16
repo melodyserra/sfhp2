@@ -1,6 +1,6 @@
 # Introduction to HTML and CSS
 
-### Day 1
+### [Day 1](../day_1)
 
 - Front end overview
 - HTML tags
