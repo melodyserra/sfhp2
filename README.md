@@ -1,6 +1,6 @@
 # Introduction to HTML and CSS
 
-### [Day 1](../day_1/README.md)
+### [Day 1](./day_1/README.md)
 
 - Front end overview
 - HTML tags
