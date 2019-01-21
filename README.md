@@ -10,7 +10,7 @@
 - Box model
 - Positioning
 - Alignment
-- Floats
+- Floats/Flexbox
 
 ### Day 2
 
