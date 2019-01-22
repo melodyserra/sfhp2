@@ -12,7 +12,7 @@
 - Alignment
 - Floats/Flexbox
 
-### Day 2
+### [Day 2](./day_2/README.md)
 
 - Alignment
 - Grid layout
