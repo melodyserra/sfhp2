@@ -205,6 +205,19 @@ CSS: a period designates a class
 
 ![The Absolute](../img/the_absolute.png)
 
+## Element Alignment
+- To determine how we can align an element we have to first know what kind of element it is.
+- Inline elements can be aligned as text, so with the `text-align` CSS property.
+- Block elements can be aligned using the space around them - margin. A margin set to auto for both left and right will center the element in a container.
+
+## Floats
+- Floating elements allows us to create a nearly unlimited number of layouts using all types of block elements.
+- [Floating](https://developer.mozilla.org/en-US/docs/Web/CSS/float) an element essentially removes it from the standard "flow" and places it to the left or right side of its container.
+- Elements can have fixed width, which will wrap underneath each other if the container is smaller than the combined widths.
+- You can also used percentage width, which will have the columns respond to the screen size.
+- You can tell already that the calculations can get out of hand really fast...
+- [Clear-fix](http://learnlayout.com/clearfix.html) forces content after the floats or the container containing the floats to render below it. 
+
 ## Flexbox vs. Floats
 
 ![Flexbox](../img/container.png)

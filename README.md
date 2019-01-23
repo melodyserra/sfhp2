@@ -14,7 +14,6 @@
 
 ### [Day 2](./day_2/README.md)
 
-- Alignment
 - Grid layout
 - Introduction to Bootstrap framework
 - CSS3 media queries
