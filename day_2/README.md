@@ -150,10 +150,41 @@ Let's take a look at an example:
 - You can specify `all` instead of each property to animate the entire state.
 
 ## Email Templates 
-- Using tables can allow for nesting (tables within tables)
-- Gives you control over where you position things
+- Using tables can allow for nesting (tables within tables).
+- Gives you control over where you position things. 
 
 ![image](../img/shots.jpg)
 
+## Discussion About Animated Web Banners
+- HTML is a good option because of its compatibility, it supports multimedia elements, and it is lightweight. 
+- [A good read on this:](https://www.disruptiveadvertising.com/graphic-design/animated-banner-ads/)
+- [A good tutorial](https://tympanus.net/codrops/2012/01/10/animated-web-banners-with-css3/)
+- Since this could involve pretty complex CSS animations and transitions, there are tools such as Bannersnack that could help here.
+
+## Advanced Styling Topics 
+### Typography 
+- Google Fonts
+- Font Awesome
+- Text tracking refers to the space between letters, this can be controlled using a CSS property called **letter spacing**
+
+```css
+
+h1 { 
+	letter-spacing: −1px; 
+}
+
+
+```
+- The text between lines of text is controlled by a CSS property called **line-height**, it is often set as a unitless value so that it is proportional to the font-size. 
+
+```css
+
+p {
+    line-height: 1.5;
+}
+```
+- There are various units that can be used when setting a font-size:
+	- relative versus absolute 
+
 ## In-Class Lab / Homework
-- The goal is to practice creating a one-page site where you apply what you learned this weekend. You can feel free to take one of the two bootstrap themes you created today or take your about.me portfolio from yesterday and clone one of them. You can also start from scratch which I recommend. Here are the main concepts we learned this weekend: **classes,ids, margin, padding, inline vs. block elements, floats and clear, column layouts and various UI elements using Twitter Bootstrap, CSS transitions.**
+- The goal is to practice creating a one-page site where you apply what you learned this weekend. You can feel free to take one of the two bootstrap themes you created today or take your about.me portfolio from yesterday and clone one of them. You can also start from scratch which I recommend. 
