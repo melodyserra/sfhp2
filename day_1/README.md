@@ -1,8 +1,5 @@
 # Introduction to HTML & CSS Workshop 
 --
-## Installation
-- Install [Sublime Text](http://www.sublimetext.com/)
-	- Sublime Text is a text-editor for code.  
 
 ## What is front-end web development?
 - Everything your eyes can see on the page. 
@@ -23,7 +20,7 @@
 
 ### What is JavaScript?
 - Helps increase interactivity of the page. 
-- Helps with page interactions such as animations 
+- Helps with page interactions such as animations. 
 - Helps with dynamic loading of content. 
 
 ## Let's Dive Deeper
@@ -36,7 +33,7 @@
 
 #### Basic layout for an HTML file
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +53,7 @@
 
 #### Basic layout for a CSS file
 
-```
+```css
 h1 {
 	color: #FF9966;
 	text-align: center;
@@ -81,14 +78,14 @@ h1 {
 - Inputs allow users to enter data to be saved to a database.
 - They come in different forms to facilitate the specific data entry type.
 
-```
+```html
 <input type="text" class="form-control" />
 ```
 
 #### select list:
 - Select lists allow users to select options from a dropdown menu.
 
-```
+```html
 <select>
 	<option value="USA">United States</option>
 </select>
@@ -97,7 +94,7 @@ h1 {
 #### button:
 - Buttons are HTML elements that give users the ability to submit the data entered as well as transition to new pages.
 
-```
+```html
 <button>My Button</button>
 ```
 
@@ -105,7 +102,7 @@ h1 {
 - JavaScript enables interaction with the page.
 - In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
 
-```
+```js
 <script src="js/script.js"></script>
 ```
 
