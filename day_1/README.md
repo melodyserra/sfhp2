@@ -123,14 +123,14 @@ h1 {
 
 HTML:
 
-```
+```html
 <div id=“header”>
 	<h1>Welcome to my website</h1>	
 </div>
 ``` 
 CSS: hash/pound sign designate an id
 
-```
+```css
 #header{
 	text-align: center;
 	color: red;
@@ -145,7 +145,7 @@ CSS: hash/pound sign designate an id
 
 HTML:
 
-```
+```html
 <div class=“paragraph”>
      Here are my favorite hobbies:
      skateboarding, scuba diving, and
@@ -155,7 +155,7 @@ HTML:
 ```
 CSS: a period designates a class
 
-```
+```css
 .paragraph {
 	color: green;
 }
@@ -224,7 +224,7 @@ CSS: a period designates a class
 
 HTML
 
-```
+```html
 <div>
 	<section>Hello</section>
 	<section>Hello 2</section>
@@ -235,7 +235,7 @@ HTML
 
 CSS 
 
-```
+```css
 div {
 	display: flex;
 	justify-content: space-between;
