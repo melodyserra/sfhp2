@@ -244,11 +244,11 @@ div {
 ```
 
 ## How can you edit an existing webpage?
-- Hit "command+option+j" and this will open the developer tools. 
+- Open the developer tools. 
 - This can then be used as a “console” to test new code/change code and see what it looks like. 
 
-## about.me type portfolio site
-Click [here](virtual-resume) to find the starter code for a virtual about me page you will be creating. Change the HTML where necessary. Upon completion of the HTML, add your own styles. Add ids and classes to your elements to have even more control over the design and style of the page. In this folder you will see [screenshots](virtual-resume) of an example that has been stylized. 
+## In-Class Lab / Homework
+- The goal is to practice creating a one-page site where you apply what you learned today. You can feel free to take one of the projects you created today and add to it or you can also start from scratch. 
 
 ## Summary
 - HTML and CSS work together. How?

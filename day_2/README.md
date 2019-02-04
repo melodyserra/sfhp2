@@ -32,7 +32,7 @@
 - All columns should be wrapped into an element with a class of row.
 - So the complete three-column layout may look something like this:
 
-```
+```html
 <div class="row">
 	<div class="col-sm-4">
 		Content Here
@@ -60,13 +60,13 @@
 
 HTML
 
-```
+```html
 <div id="my-div"></div>
 ```
 
 CSS
 
-```
+```css
 @media(min-width: 700px) {
 	#my-div {
 		width:400px;
@@ -80,7 +80,7 @@ CSS
 
 CSS
 
-```
+```css
 @media(max-width: 700px) {
 	#my-div {
 		width:400px;
@@ -92,7 +92,7 @@ CSS
 
 - You can also combine these values to select a range:
 
-```
+```css
 @media(min-width: 700px) and (max-width: 900px) {
 	#my-div {
 		width:400px;
@@ -131,7 +131,7 @@ transition: property duration easing;
 
 Let's take a look at an example:
 
-```
+```css
 .box {
 	width:100px;
 	height:100px;
@@ -165,6 +165,7 @@ Let's take a look at an example:
 ### Typography 
 - Google Fonts
 - Font Awesome
+- Linking to fonts
 - Text tracking refers to the space between letters, this can be controlled using a CSS property called **letter spacing**
 
 ```css
@@ -186,5 +187,63 @@ p {
 - There are various units that can be used when setting a font-size:
 	- relative versus absolute 
 
-## In-Class Lab / Homework
-- The goal is to practice creating a one-page site where you apply what you learned this weekend. You can feel free to take one of the two bootstrap themes you created today or take your about.me portfolio from yesterday and clone one of them. You can also start from scratch which I recommend. 
+### Color
+- There are three main ways to use colors in CSS - semantic, HEX values, and RGB(A) values.
+
+##### Semantic:
+
+```css
+div {
+	background-color:black;
+}
+```
+
+##### HEX:
+
+```css
+div {
+	background-color:#000000;
+}
+```
+
+##### RGBA:
+
+```css
+div {
+	background-color:rgba(0,0,0,0.5);
+}
+```
+
+#### CSS Gradients
+- CSS gradients were introduced as of CSS3.
+- They allow for a gradient of colors to be applied across multiple solid colors.
+- These are hard to write via raw CSS, so generators are often used.
+- Let's have a look at one [here](http://www.colorzilla.com/gradient-editor/).
+
+### Images
+- Background images:
+	- Let's have a look at one [here](https://css-tricks.com/perfect-full-page-background-image/).
+- Manipulating images:
+	- z-index
+	- masking (border-radius)
+	- overlay
+	- opacity 
+	- box shadow
+	- hover
+	- rotating
+	- sizing
+	- responsiveness
+
+## Putting it Together
+- For this lab we will be creating a personal landing page using HTML and CSS.
+- A starter page has been created for you [here](about_me_starter_website/).
+- This is meant to be creative, but make sure to at least do the following:
+	- Add the class "fixed-top" to the header to make it stay in place during scroll.
+	- Use rgba colors to make the header navbar semi-transparent.
+	- Use Google Fonts to implement a font of your choice for the logo.
+	- Replace the picture of me with one of you :) You will need to look up the <img> tag to make this happen.
+	- Replace the picture of the motorcycle with a background of your choice (Hint: Have a look at the CSS to find out where this background comes from).
+	- Make the background of the banner have a parallax effect. Hint: Research the "background-attachment" property in CSS.
+	- Change the text throughout the page to reflect your own personal information.
+	- Add a gradient to the background of the user-info-text class in CSS.
+	- **Bonus:** Implement a small animation using CSS somewhere on the page. You may want to research the `transition` and `transform` CSS properties.
