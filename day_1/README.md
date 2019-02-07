@@ -7,7 +7,7 @@
 
 [HTML Form](https://repl.it/@melodyserra/HTML-Form)
 
-[Floats and Flexbox](hhttps://repl.it/@melodyserra/Floats-and-Flexbox)
+[Floats and Flexbox](https://repl.it/@melodyserra/Floats-and-Flexbox)
 
 
 ## What is front-end web development?
