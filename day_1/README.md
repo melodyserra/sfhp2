@@ -1,6 +1,15 @@
 # Introduction to HTML & CSS Workshop 
 --
 
+## Links:
+
+[Examples](https://repl.it/@melodyserra/Examples)
+
+[HTML Form](https://repl.it/@melodyserra/HTML-Form)
+
+[Floats and Flexbox](hhttps://repl.it/@melodyserra/Floats-and-Flexbox)
+
+
 ## What is front-end web development?
 - Everything your eyes can see on the page. 
 - Composed of HTML, CSS, and JavaScript.
