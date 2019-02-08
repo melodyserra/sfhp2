@@ -1,11 +1,17 @@
 # Introduction to HTML & CSS Workshop-Day 2
 --
-## Linking JS with HTML
-- JavaScript enables interaction with the page.
-- In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
 
-```js
-<script src="js/script.js"></script>
+## Links:
+
+[Examples Day 2](https://repl.it/@melodyserra/Examples-Day-2)
+
+[Tables](https://repl.it/@melodyserra/Tables)
+
+[Fonts](https://repl.it/@melodyserra/Fonts)
+
+[Overlay](https://repl.it/@melodyserra/Overlay)
+
+[Final Project](https://repl.it/@melodyserra/Final-Project)
 
 ## The Grid Layout
 - Most modern layouts operate on a standard 12-column grid system.
@@ -16,8 +22,15 @@
 
 ![Grid Pictorial](../img/grid.jpg)
 
-## Code-Along: Let's Create Our Own Grid
-- We will create a 2 and 3 column grid.
+- And [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is a great resource to introduce you to the grid layout. 
+
+## Linking JS with HTML
+- JavaScript enables interaction with the page.
+- In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
+
+```js
+<script src="js/script.js"></script>
+```
 
 # Responsive Design
 
@@ -120,7 +133,7 @@ CSS
 - We will code together the "Jumbotron Narrow" template located [here](http://getbootstrap.com/examples/jumbotron-narrow/).
 - Before we start, let's also plan out our grid system.
 
-## In-Class Lab
+## Extra Lab
 - For this lab we will be coding from scratch [this Bootstrap template](http://getbootstrap.com/examples/offcanvas/).
 - Try not to look at the code through the code inspector. 
 - First plan out the grid you will use, then figure out which components you will need.
@@ -192,6 +205,7 @@ p {
 ```
 - There are various units that can be used when setting a font-size:
 	- relative versus absolute 
+	- click [here](https://www.w3schools.com/cssref/css_units.asp) to find out more 
 
 ### Color
 - There are three main ways to use colors in CSS - semantic, HEX values, and RGB(A) values.
@@ -230,15 +244,15 @@ div {
 - Background images:
 	- Let's have a look at one [here](https://css-tricks.com/perfect-full-page-background-image/).
 - Manipulating images:
-	- z-index
-	- masking (border-radius)
-	- overlay
-	- opacity 
-	- box shadow
-	- hover
-	- rotating
 	- sizing
-	- responsiveness
+	- [z-index](https://repl.it/@melodyserra/Examples-Day-2)
+	- [masking](https://css-tricks.com/clipping-masking-css/)
+	- [overlay](https://repl.it/@melodyserra/Overlay)
+	- [opacity](https://repl.it/@melodyserra/Overlay)
+	- [hover](https://repl.it/@melodyserra/Overlay)
+	- [box shadow](https://www.w3schools.com/css/css3_shadows.asp)
+	- [rotating](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
+	- [responsiveness](https://repl.it/@melodyserra/Examples-Day-2)
 
 ## Putting it Together
 - For this lab we will be creating a personal landing page using HTML and CSS.
