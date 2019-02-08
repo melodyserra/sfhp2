@@ -76,7 +76,7 @@ h1 {
 - They are equivalent to empty rectangles. 
 - They are used to format block elements that can be styled via CSS. 
 
-`<div> </div `
+`<div> </div>`
 
 #### spans:
 - They are inline elements that are normally displayed without line breaks. 
@@ -106,24 +106,6 @@ h1 {
 ```html
 <button>My Button</button>
 ```
-
-### Linking JS with HTML
-- JavaScript enables interaction with the page.
-- In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
-
-```js
-<script src="js/script.js"></script>
-```
-
-
-### HTML Markup Lab
-- Open the `html_form` folder and open `index.html`.
-- For each comment denoted by `<!-- -->` replace the comment text with the correct HTML as per the instruction to create the form.
-- Bonus 1: Alter the CSS file to use a web safe font.
-- Bonus 2: Use CSS to change the background color of the page. Experiment with using images as backgrounds as well.
-- Double Bonus: Review the CSS `transition` property documentation and try to create a small animation anywhere on the form. An example may be to highlight a border around a form field when it is clicked.
-
-
 ### Id's versus classes
 #### Id's: 
 - Are selectors. 
@@ -177,6 +159,14 @@ CSS: a period designates a class
 - Use CSS to apply styling to the divs based on the id and class selectors.
 - Bonus: Try implementing one or more styles using a CSS3 selector (first-child, nth-child, first-of-type, etc).
 
+### HTML Markup Lab
+- Open the `html_form` folder and open `index.html`.
+- For each comment denoted by `<!-- -->` replace the comment text with the correct HTML as per the instruction to create the form.
+- Bonus 1: Alter the CSS file to use a web safe font.
+- Bonus 2: Use CSS to change the background color of the page. Experiment with using images as backgrounds as well.
+- Double Bonus: Review the CSS `transition` property documentation and try to create a small animation anywhere on the form. An example may be to highlight a border around a form field when it is clicked.
+
+
 ### Margin, Padding, and the Box Model
 - **Margin** clears area outside border, it is transparent. 
 - **Padding** clears area around the content, it is transparent. 
@@ -199,15 +189,15 @@ CSS: a period designates a class
 
 ![Stackers!](../img/stackers.png)
 
-2. The Mirror
+2. The Mirror (Bonus 1)
 
 ![The Mirror](../img/the_mirror.png)
 
-3. The Skinny
+3. The Skinny (Bonus 2)
 
 ![The Skinny](../img/the_skinny.png)
 
-4. The Absolute
+4. The Absolute (Bonus 3)
 
 ![The Absolute](../img/the_absolute.png)
 
@@ -252,13 +242,6 @@ div {
 
 ```
 
-## How can you edit an existing webpage?
+## How can you see/edit within browser an existing webpage?
 - Open the developer tools. 
 - This can then be used as a “console” to test new code/change code and see what it looks like. 
-
-## In-Class Lab / Homework
-- The goal is to practice creating a one-page site where you apply what you learned today. You can feel free to take one of the projects you created today and add to it or you can also start from scratch. 
-
-## Summary
-- HTML and CSS work together. How?
-- What do you think is happening on the back-end?

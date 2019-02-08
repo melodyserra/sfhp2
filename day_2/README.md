@@ -1,5 +1,11 @@
 # Introduction to HTML & CSS Workshop-Day 2
 --
+## Linking JS with HTML
+- JavaScript enables interaction with the page.
+- In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
+
+```js
+<script src="js/script.js"></script>
 
 ## The Grid Layout
 - Most modern layouts operate on a standard 12-column grid system.
