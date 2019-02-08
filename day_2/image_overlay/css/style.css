@@ -14,10 +14,13 @@ body {
 	width: 400px;
 	height: 267px;
 	margin: 20px auto;
-
-	/* add your code here */
 	position: relative;
 
+
+	/* Step 1: add the CSS rule you found from googling 
+	"how to hide content that is flowing out of parent CSS"
+	*/
+	overflow: hidden;
 
 }
 
@@ -25,15 +28,37 @@ body {
 	width: 400px;
 	height: 267px;
 	background-color: rgba(221, 82, 56, .9);
-
-	/* add your code here */
 	position: absolute;
 	top: 0;
-	transition: all 0.5s ease-in-out;
 
+	/* Step 2: hide the overlays
+	   HINT: use the 'opacity' property */
+	opacity: 0;
+
+	/* Step 2A: add a transition */;
+	transition: all .3s ease-in-out;
 
 }
 
-.overlay:hover {
-	opacity: 0;
+/* Step 3: add a class that moves the slidein-overlay off to the left
+   HINT: use the 'transform' property and 'translateX'
+*/
+.slidein-overlay {
+	transform: translateX(-100%);
+}
+
+/* Step 4: add a class that makes the overlay visible (use opacity) 
+   when you hover over the overlay-wrapper
+   HINT: use the 'opacity' property
+*/
+.overlay-wrapper:hover .overlay {
+	opacity: 1;
+}
+
+/* Step 5: add a class that moves the slidein-overlay back to its
+   default position when you hover over the overlay-wrapper
+   HINT: use the 'transform' property and 'translateX'
+*/
+.overlay-wrapper:hover .slidein-overlay {
+	transform: translateX(0);
 }
