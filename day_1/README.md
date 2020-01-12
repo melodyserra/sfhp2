@@ -10,10 +10,16 @@
 [Floats and Flexbox](https://repl.it/@melodyserra/Floats-and-Flexbox)
 
 
-## What is front-end web development?
-- Everything your eyes can see on the page. 
-- Composed of HTML, CSS, and JavaScript.
-- A front-end developer will take the work of a designer, and code it on the front-end so a back-end developer can build on top of that. 
+## What is the box model?
+- One can say that every element on the page is wrapped by a box. 
+- That box takes up a specific amount of space by default.
+- It consists of: margins, borders, padding, and the actual content. 
+	- **Content** - The content of the box, where text and images appear
+	- **Padding** - Clears an area around the content
+	- **Border** - A border that goes around the padding and content
+	- **Margin** - Clears an area outside the border
+
+![Stackers!](../img/stackers.png)
 
 ### What is HTML? 
 - Stands for: Hyper Text Markup Language.

@@ -2,23 +2,22 @@
 
 ### [Day 1](./day_1/README.md)
 
-- Front end overview
-- HTML tags
-- HTML structure
-- Introduction to CSS
-- CSS selectors
-- Box model
-- Positioning
-- Alignment
-- Floats/Flexbox
+- Box Model
+- Floats and positioning
+- Grid layout
+- CSS media queries and Bootstrap
+- :Before and :After
+- CSS Buttons
+- iFrames
+- Cross browser compatibility
+- Typography/Type setting
+- UX design overview
 
 ### [Day 2](./day_2/README.md)
 
-- Grid layout
-- Introduction to Bootstrap framework
-- CSS3 media queries
-- CSS transitions
-- Email development/animations
-- Typography
-- Color
-- Images
+- HTML tables
+- Forms
+- Form validation
+- JavaScript intro
+- jQuery intro
+
