@@ -19,7 +19,7 @@
 	- **Border** - A border that goes around the padding and content
 	- **Margin** - Clears an area outside the border
 
-![Stackers!](../img/stackers.png)
+![Box Model!](../img/box_model.png)
 
 ### What is HTML? 
 - Stands for: Hyper Text Markup Language.
