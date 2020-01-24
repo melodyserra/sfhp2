@@ -1,18 +1,21 @@
-# Introduction to HTML & CSS Workshop 
+# Front-end web development 
 --
 
 ## Links:
 
-[Examples](https://repl.it/@melodyserra/Examples)
+[Examples]()
 
-[HTML Form](https://repl.it/@melodyserra/HTML-Form)
+[Review](https://repl.it/@melodyserra/review)
 
 [Floats and Flexbox](https://repl.it/@melodyserra/Floats-and-Flexbox)
 
+--
+# Review
 
 ## What is the box model?
 - One can say that every element on the page is wrapped by a box. 
 - That box takes up a specific amount of space by default.
+- The model allows us to define space around and between elements. 
 - It consists of: margins, borders, padding, and the actual content. 
 	- **Content** - The content of the box, where text and images appear
 	- **Padding** - Clears an area around the content
@@ -21,196 +24,11 @@
 
 ![Box Model!](../img/box_model.png)
 
-### What is HTML? 
-- Stands for: Hyper Text Markup Language.
-- It is the content of the page. 
-	- e.g. header or paragraph
-- Has its own default styles. 
-
-### What is CSS?
-- Stands for: Cascading Style Sheet. 
-- It is the stylistic component of the page. 
-- Overrides the default styles of HTML. 
-	- e.g. change the color or the font-family of your header
-
-### What is JavaScript?
-- Helps increase interactivity of the page. 
-- Helps with page interactions such as animations. 
-- Helps with dynamic loading of content. 
-
-## Let's Dive Deeper
-### HTML:
-#### Tags < >
-- Allow you to set up structure of the page. 
-- Tell the browser how to format content. 
-
-`<h1>Hello World!</h1>`
-
-#### Basic layout for an HTML file
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>My First Webpage</title>
-</head>
-<body>
-	<h1>Hello World!</h1>
-</body>
-</html>
-
-```
-### CSS:
-- In order to run external CSS you need to link it to the HTML. This usually goes in the head tag:
-
-`<link rel=“stylesheet” href=“css/style.css” />`
-
-#### Basic layout for a CSS file
-
-```css
-h1 {
-	color: #FF9966;
-	text-align: center;
-}
-
-```
-### What about different ways to organize content?
-
-#### divs:
-- Define a division.
-- They are equivalent to empty rectangles. 
-- They are used to format block elements that can be styled via CSS. 
-
-`<div> </div>`
-
-#### spans:
-- They are inline elements that are normally displayed without line breaks. 
-
-`<span> </span> `
-
-#### input:
-- Inputs allow users to enter data to be saved to a database.
-- They come in different forms to facilitate the specific data entry type.
-
-```html
-<input type="text" class="form-control" />
-```
-
-#### select list:
-- Select lists allow users to select options from a dropdown menu.
-
-```html
-<select>
-	<option value="USA">United States</option>
-</select>
-```
-
-#### button:
-- Buttons are HTML elements that give users the ability to submit the data entered as well as transition to new pages.
-
-```html
-<button>My Button</button>
-```
-### Id's versus classes
-#### Id's: 
-- Are selectors. 
-- They are used if you want a single, unique element. 
-- By convention, they are used only once. 
-
-HTML:
-
-```html
-<div id=“header”>
-	<h1>Welcome to my website</h1>	
-</div>
-``` 
-CSS: hash/pound sign designate an id
-
-```css
-#header{
-	text-align: center;
-	color: red;
-}
-```
-
-
-#### Classes:
-- Are selectors. 
-- Select an element with a specific class attribute.
-- Can be used more than once.  
-
-HTML:
-
-```html
-<div class=“paragraph”>
-     Here are my favorite hobbies:
-     skateboarding, scuba diving, and
-     riding motorcycles.
-</div> 
-
-```
-CSS: a period designates a class
-
-```css
-.paragraph {
-	color: green;
-}
-
-```
-
-## Selector Exercise
-- Let's use Codepen.io to practice CSS selectors.
-- Create at least one div with an id, and four divs with a class.
-- Use CSS to apply styling to the divs based on the id and class selectors.
-- Bonus: Try implementing one or more styles using a CSS3 selector (first-child, nth-child, first-of-type, etc).
-
-### HTML Markup Lab
-- Open the `html_form` folder and open `index.html`.
-- For each comment denoted by `<!-- -->` replace the comment text with the correct HTML as per the instruction to create the form.
-- Bonus 1: Alter the CSS file to use a web safe font.
-- Bonus 2: Use CSS to change the background color of the page. Experiment with using images as backgrounds as well.
-- Double Bonus: Review the CSS `transition` property documentation and try to create a small animation anywhere on the form. An example may be to highlight a border around a form field when it is clicked.
-
-
-### Margin, Padding, and the Box Model
-- **Margin** clears area outside border, it is transparent. 
-- **Padding** clears area around the content, it is transparent. 
-- The **CSS box model** is a box that wraps around HTML elements. It consists of: the content, padding, border, and margin. This model allows us to define space around and between elements. 
-
-
-![image](http://www.w3schools.com/css/box-model.gif)
-
-## CSS Positioning
+## CSS positioning
 - There are four main types of positioning that you will see most often - static, relative, absolute, and fixed.
 - Static positioning is what all elements have by default.
 - Relative and absolute work together - elements can be positioned absolutely relative to their container.
 - Fixed position elements are essentially absolute relative to the window no matter where they are in the DOM. A.K.A. the window is always the relative parent.
-
-## Positioning Exercise
-- Try to replicate the following mockups using what we've talked about in this class so far.
-- Utilize margins, padding, floats, positioning, etc.
-
-1. Stackers!
-
-![Stackers!](../img/stackers.png)
-
-2. The Mirror (Bonus 1)
-
-![The Mirror](../img/the_mirror.png)
-
-3. The Skinny (Bonus 2)
-
-![The Skinny](../img/the_skinny.png)
-
-4. The Absolute (Bonus 3)
-
-![The Absolute](../img/the_absolute.png)
-
-## Element Alignment
-- To determine how we can align an element we have to first know what kind of element it is.
-- Inline elements can be aligned as text, so with the `text-align` CSS property.
-- Block elements can be aligned using the space around them - margin. A margin set to auto for both left and right will center the element in a container.
 
 ## Floats
 - Floating elements allows us to create a nearly unlimited number of layouts using all types of block elements.
@@ -220,12 +38,12 @@ CSS: a period designates a class
 - You can tell already that the calculations can get out of hand really fast...
 - [Clear-fix](http://learnlayout.com/clearfix.html) forces content after the floats or the container containing the floats to render below it. 
 
-## Flexbox vs. Floats
+## Flexbox vs. floats
 
 ![Flexbox](../img/container.png)
 
-- The container is called the ***flex container***
-- The elements inside the container are called the ***flex items***
+- The container is called the ***flex container***.
+- The elements inside the container are called the ***flex items***.
 
 HTML
 
@@ -248,6 +66,172 @@ div {
 
 ```
 
-## How can you see/edit within browser an existing webpage?
-- Open the developer tools. 
-- This can then be used as a “console” to test new code/change code and see what it looks like. 
+## The grid layout
+- Most modern layouts operate on a standard 12-column grid system.
+- If you break down any of the websites you know and love you will notice many variations on the 12 column grid.
+- Each column in the grid can contain nested grids itself.
+- If you want a larger box, you need to have a greater column offset.
+- Here is a good pictorial to help you break it down:
+
+![Grid Pictorial](../img/grid.jpg)
+
+- And [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is a great resource to introduce you to the grid layout. 
+
+## Flexbox vs. grid system
+
+- CSS Grid is a newer technology. 
+- Flexbox is used for one-dimentional layouts and Grid Layout is used for two-dimentional layouts.
+- A simple question to ask yourself when deciding between grid or flexbox is:
+	- do I only need to control the layout by row or column – use a flexbox
+	- do I need to control the layout by row and column – use a grid 
+
+## Twitter Bootstrap
+- Bootstrap is a front-end framework that incorporates a grid system, UI components, JavaScript widgets and more.
+- Let's take a look at the documentation: [http://getbootstrap.com](http://getbootstrap.com/).
+- The framework consists of one main CSS file, an optional theme CSS file, and a main JS file.
+- Bootstrap requires jQuery to work, which is a JavaScript framework.
+
+## Using Bootstrap
+- To use Bootstrap you have to include the three required files.
+- Bootstrap files can be linked via the CDN provided, or downloaded locally onto the computer.
+- Remember to place your reference to the jQuery library above your reference to the Bootstrap JS code.
+
+## Bootstrap Columns
+- Columns are written in this format as a class attribute: col-(breakpoint)-(offset).
+- An example of a three-column layout may be to use the class col-sm-4.
+- All columns should be wrapped into an element with a class of row.
+- So the complete three-column layout may look something like this:
+
+```html
+<div class="row">
+	<div class="col-sm-4">
+		Content Here
+	</div>
+	<div class="col-sm-4">
+		Content Here
+	</div>
+	<div class="col-sm-4">
+		Content Here
+	</div>
+</div>
+```
+
+## Breakpoints
+- The way that Bootstrap works is to dynamically reduce column size according to the window size.
+- To be mobile-friendly, the columns will break into a stack layout after a minimum width is detected.
+- The breakpoints you can select in your columns control at which point this happens.
+- Check out their documentation [here](http://getbootstrap.com/css/#grid) to see what these breakpoints are in terms of size.
+
+## CSS3 Media Queries
+- Media queries allow you to apply and remove CSS styling based on the screen dimensions.
+- This is important to create truly mobile-friendly layouts.
+- To use it you have to specify screen resolution thresholds.
+- Let's try an example where we want to show a div where the screen size is larger than 700 pixels:
+
+HTML
+
+```html
+<div id="my-div"></div>
+```
+
+CSS
+
+```css
+@media(min-width: 700px) {
+	#my-div {
+		width:400px;
+		height:400px;
+		border:#000 1px solid;
+	}
+}
+```
+
+- Now where the screen size is below 700 pixels:
+
+CSS
+
+```css
+@media(max-width: 700px) {
+	#my-div {
+		width:400px;
+		height:400px;
+		border:#000 1px solid;
+	}
+}
+```
+
+- You can also combine these values to select a range:
+
+```css
+@media(min-width: 700px) and (max-width: 900px) {
+	#my-div {
+		width:400px;
+		height:400px;
+		border:#000 1px solid;
+	}
+}
+```
+
+- Good news! Bootstrap does this for you!
+
+## UI Elements
+- Bootstrap wraps in a myriad of great UI elements that you can drop in anywhere on your site.
+- With Bootstrap you can make really pretty things quickly.
+- Let's look at some [examples](http://getbootstrap.com/components/).
+
+
+### Review lab (building)
+
+## Pseudo-class in CSS
+- Keyword that is added to allow you to control a specific part of the element.
+	- Can you think of an example? Can you demo it for us?
+- `::before` often used to add cosmetic content to an element with the content property.
+
+```
+/* Add a heart before links */
+a::before {
+  content: "♥";
+}
+```
+- `::after` is similar and often used with `::before`. 
+
+![Pseudo Elements](../img/pseudo.png)
+
+## CSS buttons
+- Many of the standard CSS properties will be applied to styling buttons. 
+	- e.g. **background color**, **border**, **font-size**, **width**, **height**, **padding**
+- An additional CSS property that will help you make pretty buttons:
+	- **border-radius**
+- Use the pseudo-class **:hover** to change the style of the button when you move the mouse over it (good place to use transitions).
+- Let's play with this [example](https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover).
+
+## iFrames
+- Inline frame. 
+- Used to display a webpage within a webpage. 
+
+```
+<iframe src="url" height="200" width="300"></iframe>
+
+```
+
+- By default an iFrame has a border around it, any guesses on how to remove it?
+- Every <iframe> in a page requires increased memory and other computing resources. 
+- You can read more about specific iFrame attributes [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+
+## Cross-browser
+- It's difficult to predict which browser our users will be using, so it's important to check compatibility on all browsers. 
+- Most packaging tools like **webpack** will account for cross-browser compatibility for us, however as front-end engineers there are a few things we could be doing. 
+- There are a few CSS3 properties where we know there will be variation accross browsers so we could use vendor prefixes to account for this inconsistencies. Here is a good [resource](https://www.monitis.com/blog/5-css-techniques-for-better-cross-browser-compatibility/). 
+- There are also libraries like **reset** that will help eleminate inconsistensies accross browsers. You essentially import the [CSS file](https://gist.github.com/DavidWells/18e73022e723037a50d6) and it will remove things like margins for example which will vary by browser. 
+- Additionally, an [autoprefixer](https://css-tricks.com/autoprefixer/) will apply prefixes for you so you do not have to. 
+
+## Typography and type-setting (thinking about how to build out this portion)
+
+## UX Design
+- The role of a front-end engineer is to turn the designs made into code and assets. They are creating the visual interface for a wesbite - everything the user sees and interacts with. Other things they have to think about are: accessibility, performance, cross-browser and cross-device functionality. 
+- Let's talk about what comes before the front-end engineers start building. 
+
+![Workflow](../img/workflow.png)
+
+
+

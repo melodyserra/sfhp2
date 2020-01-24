@@ -1,28 +1,159 @@
-# Introduction to HTML & CSS Workshop-Day 2
+# # Front-end web development-Day 2
 --
 
 ## Links:
 
-[Examples Day 2](https://repl.it/@melodyserra/Examples-Day-2)
+[Examples Day 2]()
 
 [Tables](https://repl.it/@melodyserra/Tables)
 
-[Fonts](https://repl.it/@melodyserra/Fonts)
+[Emaill](https://repl.it/@melodyserra/email)
 
-[Overlay](https://repl.it/@melodyserra/Overlay)
+[Select Fun]()
 
-[Final Project](https://repl.it/@melodyserra/Final-Project)
+[Final Project]()
 
-## The Grid Layout
-- Most modern layouts operate on a standard 12-column grid system.
-- If you break down any of the websites you know and love you will notice many variations on the 12 column grid.
-- Each column in the grid can contain nested grids itself.
-- If you want a larger box, you need to have a greater column offset.
-- Here is a good pictorial to help you break it down:
+## Email templates 
+- Using tables can allow for nesting (tables within tables).
+- Gives you control over where you position things. 
 
-![Grid Pictorial](../img/grid.jpg)
+![image](../img/shots.jpg)
 
-- And [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is a great resource to introduce you to the grid layout. 
+```
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Sarah</td>
+    <td>Smith</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Jackson</td>
+    <td>34</td>
+  </tr>
+</table>
+```
+
+```
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+```
+
+# Forms 
+- Forms are the primary means to get data from the front end to various back end systems.
+- Typically when a form is submitted, the data is sent to a script on the back end that does something with it and then redirects the user to another page or back to where they were before.
+- Forms generally have three pieces of information that accompany any transmission:
+	- Where to send the data
+	- How to send it
+	- What is being sent
+
+## The `form` tag
+- The form tag is used to enclose the form fields you want to send to the backend, as well as to contain information about where the data is going.
+- Here is what a simple login `form` tag could look like:
+
+```
+<form action="/login" method="POST"></form>
+```
+
+## The `input` tag
+- The `input` tag provides a box for the user to enter information.
+- With HTML5 we have many different input types available to us. Here are a few common ones:
+	- `<input type="text" />`
+	- `<input type="password" />`
+	- `<input type="email" />`
+	- `<input type="tel" />`
+- While some of them may not look any different on the computer, they will open up different keyboard on a mobile device.
+- Let's take a look at a demonstration using an iPhone.
+
+## The `select` and `option` tags
+- The `select` and `option` tags go together to create dropdown lists.
+- They can be hard-coded, but they are often generated dynamically via the back end service.
+- Let's take a look at the syntax:
+
+```
+<select>
+	<option value="CA">California</option>
+	<option value="NY">New York</option>
+</select>
+```
+
+## Checkboxes and radios
+- Checkboxes and radios are used to select pre-defined values from a list.
+- Here are a couple examples:
+
+```
+<input type="checkbox" name="tos-agree" value="accept" />
+```
+and
+
+```
+<input type="radio" name="accept" value="accept" />
+<input type="radio" name="accept" value="decline" />
+```
+- Both of these input types have hard-coded values because they are pre-defined.
+
+## Field `name` attributes
+- Each field that you want to use to accept and transmit data will have to have a `name` attribute.
+- The name attribute is essentially the parameter that identifies that piece of information to the server on the back end.
+- Adding names is simple:
+
+```
+<input type="text" name="username" />
+```
+or
+
+```
+<select name="state">
+	<option value="">Choose State</option>
+	<option value="CA">California</option>
+	<option value="NY">New York</option>
+</select>
+```
+
+## Styling form fields
+- Form fields have some default rendering associated with them, but it is always a good idea to overwrite that with some custom styling.
+- Let's take a look at how we can apply some basic styling to create a nice uniform feel.
+- Bootstrap also provides us a class called `form-control` that takes care of standardizing all of our form fields for us.
+
+## Form exercise
+- For this exercise we will practice using form tags to create a simple form.
+- Below is a mockup of what we want to accomplish. Try to replicate the same basic design.
+- Pay attention to which input field types to use.
+
+![HTML Form](../img/mock.png)
+
+## Simple form validation
+- This method of reading form data with JavaScript is most commonly used for form validation.
+- One of the simplest checks we can make is that all fields have been filled out and not left blank.
+- Here's an example using a for-in loop to check the form for blank submissions:
+
+```js
+for (field in formInfo) {
+	if (formInfo[field] === "") {
+		alert("Please fill in all fields.");
+		return false;
+	}
+}
+```
+- This loop with go through the object and check for blank entries.
+- If a blank is found, and alert will be triggered and the parent function will return false. This will prevent any further action from taking place.
+- When applying validation on a form using JS its common practice to set the `type` attribute of the submit button to "button". This will make sure it doesn't submit the form without going through the validation first.
+
+## Simple validation exercise
+- In this exercise you will add simple validation to your form.
+- First start off by binding a click event to your submit button that will pull out all of the form fields into an object.
+- Create a loop that will check each field for a blank submission.
+- Prevent any further action from taking place.
+- If each field is filled out, alert your user "Thanks for submitting the form!".
+
+# Introduction to JavaScript
 
 ## Linking JS with HTML
 - JavaScript enables interaction with the page.
@@ -32,238 +163,222 @@
 <script src="js/script.js"></script>
 ```
 
-# Responsive Design
+## What is JavaScript?
+- JavaScript is a programming language that runs on the front-end (the client), and also the back-end (the server).
+- It is based on ECMAScript, and follows its patterns. Check out [this link](http://en.wikipedia.org/wiki/ECMAScript) for more information.
+- HTML and CSS are sort of like style and layout guides that tell the browser what to render to the user. JavaScript is a list of detailed operations that can respond to events and change things on the page.
 
-## Twitter Bootstrap
-- Bootstrap is a front-end framework that incorporates a grid system, UI components, JavaScript widgets and more.
-- Let's take a look at the documentation: [http://getbootstrap.com](http://getbootstrap.com/).
-- The framework consists of one main CSS file, an optional theme CSS file, and a main JS file.
-- Bootstrap requires jQuery to work, which is a JavaScript framework.
+## What can JavaScript do?
+- JavaScript powers web interactivity. It is responsible for adding functionality to your web interfaces.
+- Here is a short list of common JavaScript functionality:
+	- Attach events to DOM elements, such as click or mouseover events.
+	- Light animations such as fades or slides.
+	- AJAX to pull data from the server after the initial page load.
+	- Advanced vector drawings and animations with HTML5 canvas.
+	- Hybrid mobile apps.
+	- And much more.
 
-## Using Bootstrap
-- To use Bootstrap you have to include the three required files.
-- Bootstrap files can be linked via the CDN provided, or downloaded locally onto the computer.
-- Remember to place your reference to the jQuery library above your reference to the Bootstrap JS code.
+## JavaScript data types
 
-## Bootstrap Columns
-- Columns are written in this format as a class attribute: col-(breakpoint)-(offset).
-- An example of a three-column layout may be to use the class col-sm-4.
-- All columns should be wrapped into an element with a class of row.
-- So the complete three-column layout may look something like this:
+#### Strings
 
-```html
-<div class="row">
-	<div class="col-sm-4">
-		Content Here
-	</div>
-	<div class="col-sm-4">
-		Content Here
-	</div>
-	<div class="col-sm-4">
-		Content Here
-	</div>
-</div>
+Strings are simply pieces of text denoted by quotation marks. An example may be:
+
+```
+"Hello World!"
 ```
 
-## Breakpoints
-- The way that Bootstrap works is to dynamically reduce column size according to the window size.
-- To be mobile-friendly, the columns will break into a stack layout after a minimum width is detected.
-- The breakpoints you can select in your columns control at which point this happens.
-- Check out their documentation [here](http://getbootstrap.com/css/#grid) to see what these breakpoints are in terms of size.
+#### Integers
 
-## CSS3 Media Queries
-- Media queries allow you to apply and remove CSS styling based on the screen dimensions.
-- This is important to create truly mobile-friendly layouts.
-- To use it you have to specify screen resolution thresholds.
-- Let's try an example where we want to show a div where the screen size is larger than 700 pixels:
+Integers are simply whole numbers without any decimals. An example may be `45` or `2`.
+
+#### Variables
+
+Variables allow us to represent information by a specific set of characters. Therefore we do not have to keep typing the same code over and over:
+
+```js
+var saying = "Hello World!";
+
+alert(saying);
+```
+
+#### Arrays
+
+Arrays allow us to be able to store a set of data in one place. Let's say we want to look up information about a particular user. An array of a user's information may look like this:
+
+```js
+var student = ["Max", 27, "San Francisco"];
+```
+
+We can access pieces of this information through the index value:
+
+- First Name: `student[0]`
+- Age: `student[1]`
+
+
+## Control flow in JavaScript
+- Often times you want to make sure certain blocks of code get activated under specific circumstances.
+- Control flow structures help you specify when you want blocks of code to run based on a number of true/false conditions.
+
+## Conditionals
+
+- Standard `if, else` blocks
+- Slightly more advanced `if, else if, else` blocks
+
+## Comparison operators
+
+- AND `&&`, OR `||`
+- `>`, `<`, `>=`, `<=`
+
+## Control flow exercise: The Marathon Runner
+- Create a prompt that asks the user what their best marathon time was.
+- If their time was between 4 to 5 hours, alert the user that their time was average.
+- if the time was between 2 to 4 hours, alert the user that their time was excellent.
+- If the time was greater than 5 hours, alert the user that they need to speed up!
+
+#### Functions
+
+Functions allow us to write code once and call it a number of times throughout our program. This helps us keep code maintainable and also helps to make it dynamic.
+
+```js
+function sayHello() {
+	alert("Hello World!");
+}
+```
+
+We can also pass in data to perform a dynamic operation:
+
+```js
+function addTwo(num1, num2) {
+	alert(num1 + num2);
+}
+```
+
+When using JavaScript to perform operations, you may need to `return` the data outside of the function. You can do this like so:
+
+```js
+function addTwo(num1, num2) {
+	return num1 + num2;
+}
+```
+
+To call a function after it is written, you refer to it by its name:
+
+```js
+sayHello();
+
+addTwo(1, 2);
+```
+
+# Introduction to jQuery
+
+## What is jQuery?
+
+jQuery is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML.
+
+It helps us out with:
+
+- DOM traversal
+- CSS manipulation through style attributes
+- Event handling
+- Animation
+- And much more
+
+## How to use jQuery
+
+- jQuery is available via CDN at code.jquery.com
+- You can also download the library and serve it locally
+- jQuery by itself is a library of functions. The team has also built additional tools that help us with a variety of things:
+- jQuery UI: A UI tool that adds features such as additional easings, a datepicker, modals, effects, and more.
+- jQuery Mobile: A mobile-optimized framework that allows you to create HTML5 mobile applications that look and act pretty real.
+
+## jQuery selectors
+
+- The Sizzle selector engine wrapped into jQuery is a powerful tool to help us with manipulating DOM elements.
+- The syntax is very similar to CSS:
+```js
+$("#main-heading")
+
+```
+
+- Here the $ sign represents the jQuery library.
+
+
+## jQuery actions
+
+- Actions almost always follow selectors.
+- Actions are jQuery functions that perform an operation on the element(s) selected.
+- The format is as follows:
+```js
+$("my-selector").action(options);
+```
+
+## DOM manipulation
+
+- The DOM manipulation functions in jQuery help you accomplish some pretty neat things.
+- Here are a few common manipulations you will likely see:
+
+On the fly CSS manipulations:
+```js
+$("my-selector").css("property", "value");
+```
+
+On the fly HTML manipulations:
+```js
+$("my-selector").html("New HTML inside here");
+````
+Altering CSS class attributes:
+```js
+$("my-selector").addClass("new class");
+
+$("my-selector").removeClass("class");
+
+$("my-selector").toggleClass("class");
+```
+
+## Event handling
+
+- Event handling is done very smoothly with jQuery.
+- There are a few different ways it can be performed, each having their use cases.
+- Let's say we have a button and want to attach an event:
 
 HTML
-
 ```html
-<div id="my-div"></div>
+<button id="my-button">Click Me!</button>
+```
+jQuery
+
+- This is what I like to call the shortcut method.
+- It has the limitation of not working when the DOM element doesn't already exist (think AJAX loading in dynamic content).
+
+```js
+$("#my-button").click(function() {
+  //Your code here
+});
 ```
 
-CSS
+- You can also bind events using .on
+- This is also limited to elements that already exist, but it is a better approach.
 
-```css
-@media(min-width: 700px) {
-	#my-div {
-		width:400px;
-		height:400px;
-		border:#000 1px solid;
-	}
-}
+```js
+$("#my-button").on("click", function() {
+  //Your code here
+});
 ```
-
-- Now where the screen size is below 700 pixels:
-
-CSS
-
-```css
-@media(max-width: 700px) {
-	#my-div {
-		width:400px;
-		height:400px;
-		border:#000 1px solid;
-	}
-}
+- Lastly, you can account for dynamic elements through binding the event to the document itself.
+- This also happens to be the most performant if you look at benchmark tests.
+```js
+$(document).on("click", "#my-button", function() {
+  //Your code here
+});
 ```
-
-- You can also combine these values to select a range:
-
-```css
-@media(min-width: 700px) and (max-width: 900px) {
-	#my-div {
-		width:400px;
-		height:400px;
-		border:#000 1px solid;
-	}
-}
-```
-
-- Good news! Bootstrap does this for you!
-
-## UI Elements
-- Bootstrap wraps in a myriad of great UI elements that you can drop in anywhere on your site.
-- With Bootstrap you can make really pretty things quickly.
-- Let's look at some [examples](http://getbootstrap.com/components/).
+- Here is a list of the most common events you are likely to see:
+  - Click
+  - Keyup
+  - Keydown
+  - Mouseenter
+  - Mouseleave
+  - Dblclick
+  - Change
 
 ## Putting it Together
-- Let's take a look at some of the bootstrap examples located [here](http://getbootstrap.com/getting-started/#examples).
-- We will code together the "Jumbotron Narrow" template located [here](http://getbootstrap.com/examples/jumbotron-narrow/).
-- Before we start, let's also plan out our grid system.
-
-## Extra Lab
-- For this lab we will be coding from scratch [this Bootstrap template](http://getbootstrap.com/examples/offcanvas/).
-- Try not to look at the code through the code inspector. 
-- First plan out the grid you will use, then figure out which components you will need.
-	- Hint: There is a jumbotron in there.
-
-## CSS Transitions
-- Transitions allow you to go between element states smoothly.
-- You will often use these for animations with CSS.
-- This is the syntax:
-
-```
-transition: property duration easing;
-```
-
-Let's take a look at an example:
-
-```css
-.box {
-	width:100px;
-	height:100px;
-	background-color:blue;
-	transition: width 1s ease-in-out;
-}
-
-.box:hover {
-	width:200px;
-	height:200px;
-	background-color:red;
-	transition: width 1s ease-in-out;
-}
-```
-
-- You can specify `all` instead of each property to animate the entire state.
-
-## Email Templates 
-- Using tables can allow for nesting (tables within tables).
-- Gives you control over where you position things. 
-
-![image](../img/shots.jpg)
-
-## Discussion About Animated Web Banners
-- HTML is a good option because of its compatibility, it supports multimedia elements, and it is lightweight. 
-- [A good read on this:](https://www.disruptiveadvertising.com/graphic-design/animated-banner-ads/)
-- [A good tutorial](https://tympanus.net/codrops/2012/01/10/animated-web-banners-with-css3/)
-- Since this could involve pretty complex CSS animations and transitions, there are tools such as Bannersnack that could help here.
-
-## Advanced Styling Topics 
-### Typography 
-- Google Fonts
-- Font Awesome
-- Linking to fonts
-- Text tracking refers to the space between letters, this can be controlled using a CSS property called **letter spacing**
-
-```css
-
-h1 { 
-	letter-spacing: −1px; 
-}
-
-
-```
-- The text between lines of text is controlled by a CSS property called **line-height**, it is often set as a unitless value so that it is proportional to the font-size. 
-
-```css
-
-p {
-    line-height: 1.5;
-}
-```
-- There are various units that can be used when setting a font-size:
-	- relative versus absolute 
-	- click [here](https://www.w3schools.com/cssref/css_units.asp) to find out more 
-
-### Color
-- There are three main ways to use colors in CSS - semantic, HEX values, and RGB(A) values.
-
-##### Semantic:
-
-```css
-div {
-	background-color:black;
-}
-```
-
-##### HEX:
-
-```css
-div {
-	background-color:#000000;
-}
-```
-
-##### RGBA:
-
-```css
-div {
-	background-color:rgba(0,0,0,0.5);
-}
-```
-
-#### CSS Gradients
-- CSS gradients were introduced as of CSS3.
-- They allow for a gradient of colors to be applied across multiple solid colors.
-- These are hard to write via raw CSS, so generators are often used.
-- Let's have a look at one [here](http://www.colorzilla.com/gradient-editor/).
-
-### Images
-- Background images:
-	- Let's have a look at one [here](https://css-tricks.com/perfect-full-page-background-image/).
-- Manipulating images:
-	- sizing
-	- [z-index](https://repl.it/@melodyserra/Examples-Day-2)
-	- [masking](https://css-tricks.com/clipping-masking-css/)
-	- [overlay](https://repl.it/@melodyserra/Overlay)
-	- [opacity](https://repl.it/@melodyserra/Overlay)
-	- [hover](https://repl.it/@melodyserra/Overlay)
-	- [box shadow](https://www.w3schools.com/css/css3_shadows.asp)
-	- [rotating](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
-	- [responsiveness](https://repl.it/@melodyserra/Examples-Day-2)
-
-## Putting it Together
-- For this lab we will be creating a personal landing page using HTML and CSS.
-- A starter page has been created for you [here](about_me_starter_website/).
-- This is meant to be creative, but make sure to at least do the following:
-	- Add the class "fixed-top" to the header to make it stay in place during scroll.
-	- Use rgba colors to make the header navbar semi-transparent.
-	- Use Google Fonts to implement a font of your choice for the logo.
-	- Replace the picture of me with one of you :) You will need to look up the <img> tag to make this happen.
-	- Replace the picture of the motorcycle with a background of your choice (Hint: Have a look at the CSS to find out where this background comes from).
-	- Make the background of the banner have a parallax effect. Hint: Research the "background-attachment" property in CSS.
-	- Change the text throughout the page to reflect your own personal information.
-	- Add a gradient to the background of the user-info-text class in CSS.
-	- **Bonus:** Implement a small animation using CSS somewhere on the page. You may want to research the `transition` and `transform` CSS properties.
