@@ -3,11 +3,19 @@
 
 ## Links:
 
-[Examples]()
+[Practice](https://repl.it/@melodyserra/practice)
 
 [Review](https://repl.it/@melodyserra/review)
 
 [Floats and Flexbox](https://repl.it/@melodyserra/Floats-and-Flexbox)
+
+[Media Queries](https://repl.it/@melodyserra/mediaqueries)
+
+[Media Queries 2](https://repl.it/@melodyserra/youdomediaqueries)
+
+[Type](https://repl.it/@melodyserra/type)
+
+[Final Lab](https://repl.it/@melodyserra/labday1)
 
 --
 # Review
@@ -179,8 +187,7 @@ CSS
 - With Bootstrap you can make really pretty things quickly.
 - Let's look at some [examples](http://getbootstrap.com/components/).
 
-
-### Review lab (building)
+## Review lab 
 
 ## Pseudo-class in CSS
 - Keyword that is added to allow you to control a specific part of the element.
@@ -225,13 +232,67 @@ a::before {
 - There are also libraries like **reset** that will help eleminate inconsistensies accross browsers. You essentially import the [CSS file](https://gist.github.com/DavidWells/18e73022e723037a50d6) and it will remove things like margins for example which will vary by browser. 
 - Additionally, an [autoprefixer](https://css-tricks.com/autoprefixer/) will apply prefixes for you so you do not have to. 
 
-## Typography and type-setting (thinking about how to build out this portion)
+## Typography and type-setting
+- Similar to math or science, in web development when you're dealing with size there are different units. 
+- Rem and em are relative units, px is not. 
+- An em is a unit of typography, equal to the currently specified point-size. 
+- Remember: when em units are used on font-size, the size is relative to the font-size of the parent. When used on other properties, it's relative to the font-size of the element itself.
+```
+h1 { font-size: 20px } /* 1em = 20px */
+p { font-size: 16px } /* 1em = 16px */
+```
+
+```
+.parent {
+  font-size: 18px;
+}
+.child {
+  font-size: 1.5em; /* 1.5em = 27px */
+  padding: 2em 1em; /* 2em = 54px 1em = 27px */
+}
+```
+- Rem stands for root em. It is a unit of typography equal to the root font-size. This means 1rem is always equal to the font-size defined in <html>.
+
+```
+<div class="parent">
+  I'm 15px
+  <div class="child-rem">
+  I'm 32px, as expected
+    <div class="child-rem">
+    I'm 32px, yep!
+      <div class="child-rem">
+      I'm 32px, like clockwork!
+      </div>
+    </div>
+  </div>
+</div>
+```
+```
+.html {
+  font-size: 16px;
+}
+.parent {
+  font-size: 15px;
+}
+.child-rem {
+  font-size: 2rem;
+}
+```
+- A lot of CSS properties take percentage values: width, line-height, and font-size, among others.
+- [**line-height**](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_line-height) is a property that specifies the height of a line. Only positive values are allowed. 
+- Let's briefly discuss special characters.
+- The **text-indent** property specifies the indentation of the first line in a text-block. Negative values are allowed. 
+- [**drop-caps**](https://htmldog.com/techniques/dropcaps/) allow you to make the first letter of a paragraph stand out. This is often used in blogs or news articles. 
+- Let's now briefly discuss some [**text-effects**](https://www.w3schools.com/css/css3_text_effects.asp).
+
 
 ## UX Design
 - The role of a front-end engineer is to turn the designs made into code and assets. They are creating the visual interface for a wesbite - everything the user sees and interacts with. Other things they have to think about are: accessibility, performance, cross-browser and cross-device functionality. 
 - Let's talk about what comes before the front-end engineers start building. 
 
 ![Workflow](../img/workflow.png)
+
+## Lab
 
 
 
