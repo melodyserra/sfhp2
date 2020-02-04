@@ -88,7 +88,8 @@ div {
 ## Flexbox vs. grid system
 
 - CSS Grid is a newer technology. 
-- Flexbox is used for one-dimentional layouts and Grid Layout is used for two-dimentional layouts.
+- Flexbox is used for one-dimentional layouts (either a column or row) and Grid Layout is used for two-dimentional layouts (columns and rows).
+- Flexbox is a content-first approach whereas CSS grid is a layout-first approach.
 - A simple question to ask yourself when deciding between grid or flexbox is:
 	- do I only need to control the layout by row or column – use a flexbox
 	- do I need to control the layout by row and column – use a grid 
@@ -194,7 +195,7 @@ CSS
 	- Can you think of an example? Can you demo it for us?
 - `::before` often used to add cosmetic content to an element with the content property.
 
-```
+```css
 /* Add a heart before links */
 a::before {
   content: "♥";
@@ -216,7 +217,7 @@ a::before {
 - Inline frame. 
 - Used to display a webpage within a webpage. 
 
-```
+```html
 <iframe src="url" height="200" width="300"></iframe>
 
 ```
@@ -278,7 +279,7 @@ p { font-size: 16px } /* 1em = 16px */
   font-size: 2rem;
 }
 ```
-- A lot of CSS properties take percentage values: width, line-height, and font-size, among others.
+- A lot of CSS properties take **percentage** values: width, line-height, and font-size, among others.
 - [**line-height**](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_line-height) is a property that specifies the height of a line. Only positive values are allowed. 
 - Let's briefly discuss special characters.
 - The **text-indent** property specifies the indentation of the first line in a text-block. Negative values are allowed. 
