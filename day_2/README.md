@@ -3,15 +3,17 @@
 
 ## Links:
 
-[Examples Day 2]()
+[Practice](https://repl.it/@melodyserra/practice)
 
 [Tables](https://repl.it/@melodyserra/Tables)
 
 [Emaill](https://repl.it/@melodyserra/email)
 
-[Select Fun]()
+[Forms](https://repl.it/@melodyserra/forms)
 
-[Final Project]()
+[Color Switcher](https://repl.it/@melodyserra/color)
+
+[Final Lab](https://repl.it/@melodyserra/labday2)
 
 ## Email templates 
 - Using tables can allow for nesting (tables within tables).
@@ -127,7 +129,7 @@ or
 - Below is a mockup of what we want to accomplish. Try to replicate the same basic design.
 - Pay attention to which input field types to use.
 
-![HTML Form](../img/mock.png)
+![HTML Form](../img/form.png)
 
 ## Simple form validation
 - This method of reading form data with JavaScript is most commonly used for form validation.
@@ -145,13 +147,6 @@ for (field in formInfo) {
 - This loop with go through the object and check for blank entries.
 - If a blank is found, and alert will be triggered and the parent function will return false. This will prevent any further action from taking place.
 - When applying validation on a form using JS its common practice to set the `type` attribute of the submit button to "button". This will make sure it doesn't submit the form without going through the validation first.
-
-## Simple validation exercise
-- In this exercise you will add simple validation to your form.
-- First start off by binding a click event to your submit button that will pull out all of the form fields into an object.
-- Create a loop that will check each field for a blank submission.
-- Prevent any further action from taking place.
-- If each field is filled out, alert your user "Thanks for submitting the form!".
 
 # Introduction to JavaScript
 
@@ -381,4 +376,5 @@ $(document).on("click", "#my-button", function() {
   - Dblclick
   - Change
 
-## Putting it Together
+## Simple validation exercise
+- In this exercise you will add simple validation to your form.
