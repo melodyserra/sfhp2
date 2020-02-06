@@ -252,23 +252,23 @@ p { font-size: 16px } /* 1em = 16px */
   padding: 2em 1em; /* 2em = 54px 1em = 27px */
 }
 ```
-- Rem stands for root em. It is a unit of typography equal to the root font-size. This means 1rem is always equal to the font-size defined in <html>.
+- Rem stands for root em. It is a unit of typography equal to the root font-size. This means 1rem is always equal to the font-size defined in the html.
 
-```
+```html
 <div class="parent">
   I'm 15px
   <div class="child-rem">
   I'm 32px, as expected
     <div class="child-rem">
-    I'm 32px, yep!
-      <div class="child-rem">
+    	I'm 32px, yep!
+    <div class="child-rem">
       I'm 32px, like clockwork!
-      </div>
     </div>
+   </div>
   </div>
 </div>
 ```
-```
+```css
 .html {
   font-size: 16px;
 }
