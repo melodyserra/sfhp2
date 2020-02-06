@@ -88,7 +88,7 @@ div {
 ## Flexbox vs. grid system
 
 - CSS Grid is a newer technology. 
-- Flexbox is used for one-dimentional layouts (either a column or row) and Grid Layout is used for two-dimentional layouts (columns and rows).
+- Flexbox is used for one-dimensional layouts (either a column or row) and Grid Layout is used for two-dimensional layouts (columns and rows).
 - Flexbox is a content-first approach whereas CSS grid is a layout-first approach.
 - A simple question to ask yourself when deciding between grid or flexbox is:
 	- do I only need to control the layout by row or column – use a flexbox
@@ -229,8 +229,8 @@ a::before {
 ## Cross-browser
 - It's difficult to predict which browser our users will be using, so it's important to check compatibility on all browsers. 
 - Most packaging tools like **webpack** will account for cross-browser compatibility for us, however as front-end engineers there are a few things we could be doing. 
-- There are a few CSS3 properties where we know there will be variation accross browsers so we could use vendor prefixes to account for this inconsistencies. Here is a good [resource](https://www.monitis.com/blog/5-css-techniques-for-better-cross-browser-compatibility/). 
-- There are also libraries like **reset** that will help eleminate inconsistensies accross browsers. You essentially import the [CSS file](https://gist.github.com/DavidWells/18e73022e723037a50d6) and it will remove things like margins for example which will vary by browser. 
+- There are a few CSS3 properties where we know there will be variation across browsers so we could use vendor prefixes to account for these inconsistencies. Here is a good [resource](https://www.monitis.com/blog/5-css-techniques-for-better-cross-browser-compatibility/). 
+- There are also libraries like **reset** that will help eliminate inconsistencies across browsers. You essentially import the [CSS file](https://gist.github.com/DavidWells/18e73022e723037a50d6) and it will remove things like margins for example which will vary by browser. 
 - Additionally, an [autoprefixer](https://css-tricks.com/autoprefixer/) will apply prefixes for you so you do not have to. 
 
 ## Typography and type-setting
@@ -288,7 +288,7 @@ p { font-size: 16px } /* 1em = 16px */
 
 
 ## UX Design
-- The role of a front-end engineer is to turn the designs made into code and assets. They are creating the visual interface for a wesbite - everything the user sees and interacts with. Other things they have to think about are: accessibility, performance, cross-browser and cross-device functionality. 
+- The role of a front-end engineer is to turn the designs made into code and assets. They are creating the visual interface for a website - everything the user sees and interacts with. Other things they have to think about are: accessibility, performance, cross-browser and cross-device functionality. 
 - Let's talk about what comes before the front-end engineers start building. 
 
 ![Workflow](../img/workflow.png)

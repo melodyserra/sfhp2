@@ -7,7 +7,7 @@
 
 [Tables](https://repl.it/@melodyserra/Tables)
 
-[Emaill](https://repl.it/@melodyserra/email)
+[Email](https://repl.it/@melodyserra/email)
 
 [Forms](https://repl.it/@melodyserra/forms)
 
@@ -24,8 +24,8 @@
 ```
 <table style="width:100%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
+    <th>First name</th>
+    <th>Last name</th>
     <th>Age</th>
   </tr>
   <tr>
