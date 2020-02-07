@@ -11,7 +11,11 @@
 
 [Forms](https://repl.it/@melodyserra/forms)
 
+[Traffic Light](https://repl.it/@melodyserra/trafficLight)
+
 [Color Switcher](https://repl.it/@melodyserra/color)
+
+[jQuery Intro](https://repl.it/@melodyserra/jQueryintro)
 
 [Final Lab](https://repl.it/@melodyserra/labday2)
 
